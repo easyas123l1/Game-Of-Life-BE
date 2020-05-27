@@ -1,7 +1,11 @@
-import { Application } from "https://deno.land/x/oak/mod.ts";
 import { config } from "https://deno.land/x/dotenv/mod.ts";
+import { Application } from "https://deno.land/x/oak/mod.ts";
+import * as flags from "https://deno.land/std/flags/mod.ts";
 import router from "./routes.ts";
-const port = 5000;
+
+const { args } = Deno;
+const argPort = flags.parse(args).port;
+const port = argPort ? Number(argPort) : 5000;
 
 console.log(config());
 
