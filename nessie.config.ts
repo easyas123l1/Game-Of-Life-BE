@@ -1,4 +1,4 @@
-import "https://deno.land/x/dotenv/mod.ts";
+// import "https://deno.land/x/dotenv/mod.ts";
 const configPg = {
   migrationFolder: `./migrations`,
   connection: {

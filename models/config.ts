@@ -1,4 +1,4 @@
-import "https://deno.land/x/dotenv/load.ts";
+// import "https://deno.land/x/dotenv/load.ts";
 import { Client } from "https://deno.land/x/postgres/mod.ts";
 
 const client = new Client({
