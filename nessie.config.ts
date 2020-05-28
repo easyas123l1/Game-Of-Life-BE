@@ -2,10 +2,10 @@ import "https://deno.land/x/dotenv/mod.ts";
 const configPg = {
   migrationFolder: `./migrations`,
   connection: {
-    database: "dbi6r94vgt52nj",
+    database: Deno.env.get("DATABASE"),
     host: Deno.env.get("DATABASE_URL"),
     port: 5432,
-    user: "rxgiclvddkrgdc",
+    user: Deno.env.get("USER"),
     password: Deno.env.get("PASSWORD"),
   },
   dialect: "pg",
