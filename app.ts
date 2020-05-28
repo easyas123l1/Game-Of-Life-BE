@@ -8,6 +8,7 @@ const argPort = flags.parse(args).port;
 const port = argPort ? Number(argPort) : 5000;
 
 console.log(config());
+console.log("hi");
 
 const app = new Application();
 
